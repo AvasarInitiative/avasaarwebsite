@@ -15,45 +15,64 @@ main {
     flex: 1;
 }
 
-/* Header */
+/* Default layout */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: white;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
 .logo {
     height: 50px;
-    width: auto;
 }
 
 nav ul {
     display: flex;
+    gap: 1rem;
     list-style: none;
-}
-
-nav ul li {
-    margin-left: 2rem;
-    margin-right: 1rem;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li a {
-    color: black;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 1.2rem;
+    font-family: 'Podkova', serif;
+    color: black;
+    font-size: 1rem;
 }
 
-nav ul li a:hover {
-    color: #1e3a8a;
+/* Hamburger button hidden on desktop */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    #navbar {
+        display: none;
+        width: 100%;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        background-color: #fff;
+        padding: 1rem;
+    }
+
+    #navbar.active {
+        display: block;
+    }
+}
+
 
 /* Hero Section */
 .hero {
