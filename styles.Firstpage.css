@@ -19,15 +19,21 @@ main {
 /* Header */
 header {
     position: fixed;
+    /* Fixes the header to the top */
     top: 0;
+    /* Aligns it to the top */
     left: 0;
+    /* Aligns it to the left */
     width: 100%;
+    /* Full width */
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* Ensures it stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional: subtle shadow for depth */
 }
 
 .logo {
