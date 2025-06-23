@@ -10,7 +10,7 @@
 </head>
 
 <body>
-     <div id="header-placeholder"></div>
+    <div id="header-placeholder"></div>
 
 
     <main>
@@ -41,7 +41,9 @@
         <section class="intro-snippet">
             <h2>What is Avasar?</h2>
             <p>
-                Avasar is a skill-building initiative for school students, focusing on real-life competencies like communication, money sense, and decision-making. We bridge the gap between textbooks and the world outside.
+                Avasar is a skill-building initiative for school students, focusing on real-life competencies like
+                communication, money sense, and decision-making. We bridge the gap between textbooks and the world
+                outside.
             </p>
             <a href="about.html" class="cta-link">Learn More About Us →</a>
         </section>
@@ -102,27 +104,27 @@
 
     <div id="footer-placeholder"></div>
 
-     <script>
-    // Load Header
-    fetch('Header.html')
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById('header-placeholder').innerHTML = data;
+    <script>
+        // Load Header
+        fetch('Header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
 
-            // Hamburger menu toggle (must wait until header is loaded)
-            window.toggleMenu = function() {
-                const navLinks = document.getElementById('nav-links');
-                navLinks.classList.toggle('show');
-            };
-        });
+                // Hamburger menu toggle (must wait until header is loaded)
+                window.toggleMenu = function () {
+                    const navLinks = document.getElementById('nav-links');
+                    navLinks.classList.toggle('show');
+                };
+            });
 
-    // Load Footer
-    fetch('Footer.html')
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-        });
-</script>
+        // Load Footer
+        fetch('Footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
 
 
 </body>
