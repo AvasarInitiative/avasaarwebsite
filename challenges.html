@@ -25,15 +25,23 @@
         </nav>
     </header>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <p><strong>Contact Us:</strong></p>
-            <p>Email: avasar@neetifoundation.com</p>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Avasar Foundation. All rights reserved.</p>
-        </div>
-    </footer>
+     <div id="footer-placeholder"></div>
+
+     <script>
+        // Load header
+        fetch('Header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('Footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
 
 </body>
 

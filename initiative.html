@@ -10,19 +10,7 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <img src="Logos\1-removebg-preview.png" alt="Left-corner-logo-png" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="initiative.html">Initiative</a></li>
-                <li><a href="philosophy.html">Philosophy</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="challenges.html">Challenges</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
     <main>
         <!-- Hero Section -->
@@ -33,15 +21,24 @@
     </main>
 
 
-    <footer class="footer">
-        <div class="footer-content">
-            <p><strong>Contact Us:</strong></p>
-            <p>Email: avasar@neetifoundation.com</p>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Avasar Foundation. All rights reserved.</p>
-        </div>
-    </footer>
+     <div id="footer-placeholder"></div>
+
+     <script>
+        // Load header
+        fetch('Header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('Footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+
 
 </body>
 
