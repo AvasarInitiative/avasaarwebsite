@@ -45,29 +45,36 @@ header {
 }
 
 
-/* On small screens */
 @media (max-width: 768px) {
   nav ul {
-    display: none; /* Hide menu by default */
+    /* Keep these properties as they are: */
     flex-direction: column;
     width: 100%;
     background-color: white;
-    position: absolute;
-    top: 70px; /* below header */
-    left: 0;
+    left: 0; /* Keeps it aligned to the left */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    z-index: 999;
+    z-index: 999; /* Still good to keep it above other potential elements */
+
+    /* NEW PROPERTIES FOR HIDING/SHOWING WITH TRANSITION */
+    max-height: 0; /* Start hidden */
+    overflow: hidden; /* Hide content that exceeds max-height */
+    transition: max-height 0.5s ease-in-out; /* Smooth animation */
+    padding: 0; /* Ensure no padding is making it visible when hidden */
+    margin-top: 70px; /* Push it down from the top of the viewport by header height */
+    position: absolute; /* KEEP THIS, BUT ITS TOP WILL BE CONTROLLED BY margin-top */
   }
 
   nav ul.show {
-    display: flex; /* Show when JS adds 'show' class */
+    max-height: 300px; /* Sufficiently large height to show all links */
+    /* You might need to adjust this value if you add more links later */
+    /* Remove display: flex; here, as it's already set above and we're using max-height */
   }
+}
 
   .hamburger {
     display: block; /* Show hamburger */
   }
-}
-
+  
 .logo {
   height: 50px;
   width: auto;
