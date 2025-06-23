@@ -103,20 +103,27 @@
     <div id="footer-placeholder"></div>
 
      <script>
-        // Load header
-        fetch('Header.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            });
+    // Load Header
+    fetch('header.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
 
-        // Load footer
-        fetch('Footer.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            });
-    </script>
+            // Hamburger menu toggle (must wait until header is loaded)
+            window.toggleMenu = function() {
+                const navLinks = document.getElementById('nav-links');
+                navLinks.classList.toggle('show');
+            };
+        });
+
+    // Load Footer
+    fetch('footer.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+</script>
+
 
 </body>
 
