@@ -1,14 +1,14 @@
 html,
 body {
-    /*height: 100%;*/
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     font-family: 'Podkova', serif;
     padding-top: 50px;
+    background: #fff;
+    color: #222;
 }
-
 
 main {
     flex: 1;
@@ -16,41 +16,53 @@ main {
 
 header {
     position: fixed;
-    /* Fixes the header to the top */
     top: 0;
-    /* Aligns it to the top */
     left: 0;
-    /* Aligns it to the left */
     width: 100%;
-    /* Full width */
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     z-index: 1000;
-    /* Ensures it stays above other content */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Optional: subtle shadow for depth */
+    padding: 0 5vw;
+    height: 60px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #1e3a8a;
 }
 
 .hero-section {
     width: 100%;
-    min-height: 120px; /* or whatever minimum you want */
+    min-height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
-    padding: 20px 0; /* add vertical padding for breathing room */
-}
-
-@media (max-width: 600px) {
-    .hero-section {
-        min-height: 80px;
-        padding: 10px 0;
-    }
-    .hero-section h1, .hero-section .highlight-heading {
-        font-size: 1.5rem; /* or adjust as needed */
-    }
+    padding: 20px 0;
+    margin-top: 60px; /* To offset fixed header */
 }
 
 .highlight-heading {
@@ -71,78 +83,53 @@ header {
     left: -10px;
     transform: translateY(-50%) skewX(-10deg);
     width: 120%;
-    height: 80%; /* Ensure yellow is tall enough */
-    background-color: #ffe928; /* Bright yellow */
+    height: 80%;
+    background-color: #ffe928;
     border-radius: 20px;
     z-index: -1;
 }
 
-
-
-h2 {
+h2,
+.subheading {
     font-size: 1.9rem;
     font-weight: 600;
     text-align: center;
     margin-top: 2rem;
     color: #333;
-    padding: 2rem;
+    padding: 2rem 1rem 0 1rem;
     font-weight: normal;
     font-style: italic;
 }
 
-h2 em {
+h2 em,
+.subheading em {
     color: #1e3a8a;
     font-style: italic;
     font-weight: bold;
 }
 
-
-
-
-.logo {
-    height: 50px;
-    /* Adjust based on your logo's dimensions */
-    width: auto;
-    /* Ensures the logo scales properly */
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin-left: 2rem;
-    margin-right: 1rem;
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.2rem;
-}
-
-nav ul li a:hover {
-    color: #1e3a8a;
-    /* Blue on hover */
+.chottu-wireframe-section {
+    width: 100%;
+    padding: 30px 0;
+    background: #fff;
 }
 
 .chottu-wireframe-img {
     width: 100%;
-    max-width: 2000px; /* or whatever fits your layout */
+    max-width: 1000px;
     display: block;
     margin: 0 auto;
     height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
 }
 
-/* Footer */
 .footer {
     background-color: #1e3a8a;
     color: white;
     text-align: center;
     font-size: 1rem;
-    padding: 1rem 0;
+    padding: 1rem 0 0.5rem 0;
     margin-top: auto;
 }
 
@@ -163,7 +150,6 @@ nav ul li a:hover {
 .facts-section {
     margin-top: 2.9rem;
     background-color: #0a1a2f;
-    /* dark navy background */
     color: #fff;
     padding: 50px 20px;
     text-align: center;
@@ -184,6 +170,9 @@ nav ul li a:hover {
     padding: 30px 20px;
     flex: 1 1 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    min-width: 250px;
+    max-width: 350px;
+    margin: 10px 0;
 }
 
 .fact-icon {
@@ -192,17 +181,105 @@ nav ul li a:hover {
 }
 
 .fact-card h3 {
-    font-size: 35px;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .fact-card p {
-    font-size: 14px;
+    font-size: 1rem;
     color: #ccc;
 }
 
 .highlight {
     color: #ffd700;
-    /* yellow highlight */
     font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .highlight-heading {
+        font-size: 4rem;
+        padding: 0.5rem 1rem;
+    }
+    .facts-container {
+        gap: 10px;
+    }
+    .fact-card {
+        padding: 20px 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px 2vw;
+    }
+    .logo {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding-left: 0;
+    }
+    nav ul li {
+        margin: 0;
+    }
+    .hero-section {
+        min-height: 80px;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+    .highlight-heading {
+        font-size: 2.2rem;
+        padding: 0.3rem 0.5rem;
+    }
+    h2,
+    .subheading {
+        font-size: 1.1rem;
+        padding: 1rem 0.5rem 0 0.5rem;
+    }
+    .facts-section {
+        padding: 30px 5px;
+    }
+    .facts-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .fact-card {
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+        font-size: 0.95rem;
+        padding: 15px 5px;
+    }
+    .fact-icon {
+        font-size: 2.2rem;
+    }
+    .fact-card h3 {
+        font-size: 1.1rem;
+    }
+    .fact-card p {
+        font-size: 0.9rem;
+    }
+    .chottu-wireframe-section {
+        padding: 10px 0;
+    }
+    .chottu-wireframe-img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .footer {
+        font-size: 0.95rem;
+        padding: 0.7rem 0 0.3rem 0;
+    }
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
 }
