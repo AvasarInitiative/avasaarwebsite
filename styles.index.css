@@ -1,0 +1,89 @@
+/* 1. Global Resets & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* 2. Hero Image */
+.hero {
+  width: 100%;
+  overflow: hidden;          /* hide any overflow if image is too tall */
+}
+.hero-logo {
+  display: block;
+  width: 100%;               /* full-width banner */
+  height: auto;              /* maintain aspect ratio */
+}
+
+/* 3. Main Title (H1) */
+main h1 {
+  max-width: 800px;          /* constrain line-length for readability */
+  margin: 1.5rem auto;       /* vertical space + center horizontally */
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+main h1 em {
+  font-style: normal;        /* remove italic fallback */
+  color: #E57C23;            /* brand accent for emphasis */
+}
+
+/* 4. Button Section */
+.button-section {
+  margin: 2rem 0;
+}
+.button-card-container {
+  display: flex;
+  justify-content: center;   /* center both cards */
+  gap: 1rem;                 /* space between cards */
+}
+.button-card {
+  background: #fff;
+  border: 2px solid #E57C23; /* accent border */
+  border-radius: 8px;
+  overflow: hidden;          /* clip children if needed */
+}
+.card-button {
+  display: block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #E57C23;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+}
+.card-button:hover {
+  background: #E57C23;       /* fill on hover */
+  color: #fff;               /* white text on hover */
+}
+
+/* 5. Intro Snippet */
+.intro-snippet {
+  max-width: 600px;
+  margin: 3rem auto;         /* space above & below, centered */
+  text-align: center;
+}
+.intro-snippet h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+.intro-snippet p {
+  font-size: 1rem;
+  color: #555;
+}
+.cta-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #E57C23;
+  text-decoration: none;
+  transition: text-decoration 0.2s;
+}
+.cta-link:hover {
+  text-decoration: underline;
+}
