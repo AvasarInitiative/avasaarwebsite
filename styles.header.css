@@ -21,14 +21,14 @@
 
 .main-nav ul {
   display: flex;
-  gap: 2rem;
   list-style: none;
+  gap: 2rem;
 }
 
 .main-nav ul li a {
   text-decoration: none;
   color: black;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
@@ -42,6 +42,7 @@
   cursor: pointer;
 }
 
+/* Responsive for small screens */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
