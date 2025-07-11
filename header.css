@@ -1,78 +1,53 @@
-/* header.css */
+/* Site Header Container */
 .site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1rem 2.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  min-height: 70px;
-  flex-wrap: wrap;
+  display: flex;                     /* Arrange logo and nav side by side */
+  justify-content: space-between;    /* Push logo to left, nav to right */
+  align-items: center;               /* Vertically center items */
+  padding: 1rem 2rem;                /* Space inside header: 1rem top/bottom, 2rem left/right */
+  background-color: #ffffff;         /* White background for a clean look */
+  border-bottom: 1px solid #eeeeee;  /* Light gray line separating header from content */
 }
 
-.site-logo {
-  height: 50px;
-  max-width: 140px;
-  width: auto;
+/* Logo Section */
+.logo {
+  display: flex;           /* Place logo image and tagline inline */
+  align-items: center;     /* Vertically center image and text */
 }
 
-.main-nav {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
+/* Logo Image */
+.logo-img {
+  height: 5px;            /* Fixed height for consistent sizing */
+  margin-right: 0.75rem;   /* Space between image and tagline */
 }
 
+/* Tagline under Logo */
+.tagline {
+  margin: 0;               /* Remove default paragraph spacing */
+  font-size: 0.85rem;      /* Slightly smaller than body text */
+  color: #666666;          /* Medium gray for subtle emphasis */
+}
+
+/* Main Navigation List */
 .main-nav ul {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
+  list-style: none;        /* Remove default bullets */
+  display: flex;           /* Lay out links horizontally */
+  margin: 0;               /* Reset default list margins */
+  padding: 0;              /* Reset default list padding */
 }
 
-.main-nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.1rem;
-  font-weight: 500;
+/* Individual Navigation Item */
+.main-nav li {
+  margin-left: 2rem;       /* Space between navigation links */
 }
 
-.main-nav ul li a:hover {
-  color: #1e3a8a;
+/* Navigation Links */
+.main-nav a {
+  text-decoration: none;   /* Remove underline */
+  color: #333333;          /* Dark gray for readability */
+  font-weight: 500;        /* Medium font weight for clarity */
 }
 
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-/* Responsive for small screens */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .main-nav ul {
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    background-color: white;
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-  }
-
-  .main-nav ul.show {
-    max-height: 300px;
-  }
+/* Hover State for Links */
+.main-nav a:hover {
+  color: #E57C23;          /* Brand accent color on hover */
 }
