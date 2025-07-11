@@ -16,7 +16,7 @@
 
 /* Logo Image */
 .logo-img {
-  height: 5px;            /* Fixed height for consistent sizing */
+  height: 50px;            /* Fixed height for consistent sizing */
   margin-right: 0rem;   /* Space between image and tagline */
 }
 
