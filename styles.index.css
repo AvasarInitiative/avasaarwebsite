@@ -22,3 +22,11 @@ img {
   max-width: 100%; /* Prevent images from overflowing */
   height: auto;
 }
+
+h1 {
+  text-align: center;         /* Centers the text content inside the h1 */
+  margin: 2rem auto;          /* Adds spacing above/below and centers the block horizontally */
+  font-size: 2rem;            /* Adjusts heading size (optional for emphasis) */
+  line-height: 1.4;           /* Ensures clean line spacing */
+  max-width: 800px;           /* Keeps line length readable on large screens */
+}
