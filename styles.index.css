@@ -27,7 +27,6 @@ h1 em {
 }
 
 .button-section {
-    background-color: #e0e0e0;  
     text-align: center;
     padding: 4rem 0;
 }
@@ -39,6 +38,7 @@ h1 em {
 }
 
 .button-card {
+    background-color: #e0e0e0;
     padding: 1.5rem;
     border-radius: 10px;
     width: 200px;
