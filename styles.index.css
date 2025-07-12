@@ -1,32 +1,134 @@
-/* Base font settings */
 body {
-  font-family: 'Podkova', serif;
+    font-family: 'Podkova', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
 }
 
-/* ===== Global Reset & Responsive Base ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.hero {
+    text-align: center;
+    padding: 2rem 0;
 }
-html {
-  font-size: 16px; /* Base for rem units */
-}
-body {
-  font-family: 'Podkova', serif;
-  color: #333;
-  line-height: 1.5;
-  padding: 0 1rem; /* Responsive side padding */
-}
-img {
-  max-width: 100%; /* Prevent images from overflowing */
-  height: auto;
+
+.hero-logo {
+    max-width: 100%;
+    height: auto;
 }
 
 h1 {
-  text-align: center;         /* Centers the text content inside the h1 */
-  margin: 2rem auto;          /* Adds spacing above/below and centers the block horizontally */
-  font-size: 2rem;            /* Adjusts heading size (optional for emphasis) */
-  line-height: 1.4;           /* Ensures clean line spacing */
-  max-width: 800px;           /* Keeps line length readable on large screens */
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+h1 em {
+    color: #ffcc00;
+}
+
+.button-section {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.button-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.button-card {
+    background-color: #e0e0e0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.card-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.intro-snippet {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.cta-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-link:hover {
+    text-decoration: underline;
+}
+
+.side-by-side {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.half-section {
+    width: 45%;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.impact-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.testimonial-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.testimonial {
+    max-width: 300px;
+    text-align: left;
+}
+
+.testimonial img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.testimonial-text {
+    padding: 1rem 0;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 0;
+}
+
+cite {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .button-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .side-by-side {
+        flex-direction: column;
+        align-items: center;
+    }
+    .half-section {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
 }
