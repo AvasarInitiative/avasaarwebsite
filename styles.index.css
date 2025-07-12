@@ -34,7 +34,8 @@ h1 em {
 .button-card-container {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 6rem;
+    font-size: 2rem;
 }
 
 .button-card {
