@@ -81,25 +81,10 @@
   margin-bottom: 0.5rem;
 }
 
-/* Social Icons */
-.social-icon {
-  width: 24px;
-  height: 24px;
-  margin: 0 0.5rem;
-  border-radius: 50%;
-  /* Makes icons circular */
-  transition: filter 0.3s;
-}
-
-.social-icon:hover {
-  filter: grayscale(0%);
-  /* Shows color on hover */
-}
-
 /* Footer Copyright Text */
 .footer-copyright {
   font-size: 0.9rem;
-  color: #666;
+  color: #ffff;
   margin: 0;
 }
 
