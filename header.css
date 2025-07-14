@@ -1,3 +1,7 @@
+body {
+  padding-top: 80px; /* Match your header height */
+}
+
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -5,7 +9,7 @@
   padding: 1rem 2rem;
   background-color: #ffffff;
   border-bottom: 1px solid #eeeeee;
-  position: sticky;
+  position: fixed;
   z-index: 1000;
   top: 0;
 }
