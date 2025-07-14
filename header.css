@@ -20,19 +20,13 @@
   margin-right: 0rem;   /* Space between image and tagline */
 }
 
-/* Tagline under Logo */
-.tagline {
-  margin: 0;               /* Remove default paragraph spacing */
-  font-size: 0.85rem;      /* Slightly smaller than body text */
-  color: #666666;          /* Medium gray for subtle emphasis */
-}
-
 /* Main Navigation List */
 .main-nav ul {
   list-style: none;        /* Remove default bullets */
   display: flex;           /* Lay out links horizontally */
   margin: 0;               /* Reset default list margins */
   padding: 0;              /* Reset default list padding */
+  font-size: 1.75rem;
 }
 
 /* Individual Navigation Item */
