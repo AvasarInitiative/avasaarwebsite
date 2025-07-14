@@ -88,6 +88,21 @@
   margin: 0;
 }
 
+/* Social Icons */
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  /* Makes icons circular */
+  transition: filter 0.3s;
+}
+
+.social-icon:hover {
+  filter: grayscale(0%);
+  /* Shows color on hover */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .main-nav ul {
