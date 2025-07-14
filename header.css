@@ -1,17 +1,13 @@
-/* Site Header Container */
 .site-header {
   display: flex;
-  /* Arrange logo and nav side by side */
   justify-content: space-between;
-  /* Push logo to left, nav to right */
   align-items: center;
-  /* Vertically center items */
   padding: 1rem 2rem;
-  /* Space inside header: 1rem top/bottom, 2rem left/right */
   background-color: #ffffff;
-  /* White background for a clean look */
   border-bottom: 1px solid #eeeeee;
-  /* Light gray line separating header from content */
+  position: sticky;
+  z-index: 1000;
+  top: 0;
 }
 
 /* Logo Section */
