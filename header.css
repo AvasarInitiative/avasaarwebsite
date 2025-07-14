@@ -26,7 +26,6 @@
   display: flex;           /* Lay out links horizontally */
   margin: 0;               /* Reset default list margins */
   padding: 0;              /* Reset default list padding */
-  font-size: 1.75rem;
 }
 
 /* Individual Navigation Item */
@@ -39,7 +38,9 @@
   text-decoration: none;   /* Remove underline */
   color: #333333;          /* Dark gray for readability */
   font-weight: 500;        /* Medium font weight for clarity */
+  font-size: 1.75rem;
 }
+
 
 /* Hover State for Links */
 .main-nav a:hover {
