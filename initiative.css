@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.initiative-heading {
+    padding: 2rem;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+.avasar-advantage {
+    font-size: 5.5rem;
+    color: #1e3a8a;
+    font-weight: bold;
+    font-family: 'Amita', cursive;
+    background-color: #efa693;
+    display: block;
+    width: 100%;
+}
+
+
+.flowchart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flowchart-row {
+    width: 80%;
+    margin: 2rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Prevent line overflow */
+}
+
+.flowchart-row h2 {
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+}
+
+.flowchart-row p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    padding: 1rem 0; /* Add padding to ensure line fits */
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    position: relative;
+    z-index: 1; /* Ensure items are above the line */
+}
+
+.skill-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.skill-item span {
+    font-size: 1rem;
+    color: #333;
+}
+
+.art-of-expressions .skill-list::before,
+.financial-literacy .skill-list::before {
+    content: "";
+    position: absolute;
+    width: 90%; /* Increased to ensure full coverage */
+    height: 1px;
+    background: repeating-linear-gradient(to right, #000 0, #000 8px, transparent 8px, transparent 16px); /* Adjusted dash length */
+    top: 25%; /* Moved up to align with top of icons */
+    transform: translateY(0);
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .flowchart-row {
+        width: 100%;
+    }
+    .skill-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .art-of-expressions .skill-list::before,
+    .financial-literacy .skill-list::before {
+        display: none; /* Hide dotted line on mobile */
+    }
+}
