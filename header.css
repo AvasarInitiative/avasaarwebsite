@@ -1,48 +1,138 @@
 /* Site Header Container */
 .site-header {
-  display: flex;                     /* Arrange logo and nav side by side */
-  justify-content: space-between;    /* Push logo to left, nav to right */
-  align-items: center;               /* Vertically center items */
-  padding: 1rem 2rem;                /* Space inside header: 1rem top/bottom, 2rem left/right */
-  background-color: #ffffff;         /* White background for a clean look */
-  border-bottom: 1px solid #eeeeee;  /* Light gray line separating header from content */
+  display: flex;
+  /* Arrange logo and nav side by side */
+  justify-content: space-between;
+  /* Push logo to left, nav to right */
+  align-items: center;
+  /* Vertically center items */
+  padding: 1rem 2rem;
+  /* Space inside header: 1rem top/bottom, 2rem left/right */
+  background-color: #ffffff;
+  /* White background for a clean look */
+  border-bottom: 1px solid #eeeeee;
+  /* Light gray line separating header from content */
 }
 
 /* Logo Section */
 .logo {
-  display: flex;           /* Place logo image and tagline inline */
-  align-items: center;     /* Vertically center image and text */
+  display: flex;
+  /* Place logo image and tagline inline */
+  align-items: center;
+  /* Vertically center image and text */
 }
 
 /* Logo Image */
 .logo-img {
-  height: 50px;            /* Fixed height for consistent sizing */
-  margin-right: 0rem;   /* Space between image and tagline */
+  height: 50px;
+  /* Fixed height for consistent sizing */
+  margin-right: 0rem;
+  /* Space between image and tagline */
 }
 
 /* Main Navigation List */
 .main-nav ul {
-  list-style: none;        /* Remove default bullets */
-  display: flex;           /* Lay out links horizontally */
-  margin: 0;               /* Reset default list margins */
-  padding: 0;              /* Reset default list padding */
+  list-style: none;
+  /* Remove default bullets */
+  display: flex;
+  /* Lay out links horizontally */
+  margin: 0;
+  /* Reset default list margins */
+  padding: 0;
+  /* Reset default list padding */
 }
 
 /* Individual Navigation Item */
 .main-nav li {
-  margin-left: 2rem;       /* Space between navigation links */
+  margin-left: 2rem;
+  /* Space between navigation links */
 }
 
 /* Navigation Links */
 .main-nav a {
-  text-decoration: none;   /* Remove underline */
-  color: #333333;          /* Dark gray for readability */
-  font-weight: 500;        /* Medium font weight for clarity */
-  font-size: 1.75rem;
+  text-decoration: none;
+  /* Remove underline */
+  color: #333333;
+  /* Dark gray for readability */
+  font-weight: 500;
+  /* Medium font weight for clarity */
+  font-size: 1.25rem;
 }
 
 
 /* Hover State for Links */
 .main-nav a:hover {
-  color: #E57C23;          /* Brand accent color on hover */
+  color: #E57C23;
+  /* Brand accent color on hover */
+}
+
+.site-footer {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #eeeeee;
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer Section */
+.footer-section {
+  max-width: 300px;
+}
+
+/* Footer Section Headings */
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer Section Paragraphs */
+.footer-section p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer Section Lists */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Footer Section Links */
+.footer-section a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+/* Hover State for Footer Links */
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Copyright Text */
+.footer-copyright {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav li {
+    margin: 0.5rem 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
