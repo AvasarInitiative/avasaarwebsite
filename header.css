@@ -86,7 +86,6 @@
   width: 24px;
   height: 24px;
   margin: 0 0.5rem;
-  filter: grayscale(100%);
   border-radius: 50%;
   /* Makes icons circular */
   transition: filter 0.3s;
