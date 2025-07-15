@@ -7,7 +7,7 @@ body {
 .heading-container {
     padding: 2rem;
     text-align: center;
-    margin: 0%;
+    margin-top: 5erm;
     padding: 0%;
 }
 
@@ -44,35 +44,44 @@ em {
     font-size: 1.80rem;
 }
 
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
 .intent-container {
+  flex: 1 1 300px;
+  max-width: 500px;
+  padding: 20px;
+  box-sizing: border-box;
   text-align: center;
-  padding: 40px 20px;
-  max-width: 600px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 460px; /* 🔁 ensures same height across all blocks */
 }
 
 .intent-title {
-  display: inline-block;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #2b3d8c;
   font-weight: bold;
-  background-color: #fce6e0;
-  padding: 0 10px;
-  border-radius: 4px;
-  font-family: Amita;
-}
-
-.intent-title span {
-  font-weight: normal;
-  font-style: normal;
+  background: #ffe746;
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  white-space: nowrap;
   font-family: Amita;
 }
 
 .intent-description {
-  margin-top: 20px;
-  font-size: 2.0rem;
+  font-size: 1.5rem;
   color: #333;
   text-align: justify;
-  line-height: 1.6;
-  font-weight: 500;
+  line-height: 1.8;
+  flex-grow: 1;
 }
