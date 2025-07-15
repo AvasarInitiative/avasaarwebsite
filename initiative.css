@@ -33,13 +33,20 @@ body {
     margin: 2rem 0;
     text-align: center;
     position: relative;
-    overflow: hidden; /* Prevent line overflow */;
+    overflow: hidden;
+    /* Prevent line overflow */
+    ;
 }
 
-.flowchart-row h2 {
+.flowchart-row a {
     font-size: 2.5rem;
     color: #1e3a8a;
     margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.flowchart-row a:hover {
+    color: #030303;
 }
 
 .flowchart-row p {
@@ -53,7 +60,8 @@ body {
     justify-content: center;
     gap: 2rem;
     position: relative;
-    padding: 1rem 0; /* Add padding to ensure line fits */
+    padding: 1rem 0;
+    /* Add padding to ensure line fits */
 }
 
 .skill-item {
@@ -62,7 +70,8 @@ body {
     align-items: center;
     width: 150px;
     position: relative;
-    z-index: 1; /* Ensure items are above the line */
+    z-index: 1;
+    /* Ensure items are above the line */
 }
 
 .skill-item img {
@@ -76,17 +85,23 @@ body {
     color: #333;
 }
 
+.avasar-bridge {
+    size: 100%;
+}
 
 @media (max-width: 768px) {
     .flowchart-row {
         width: 100%;
     }
+
     .skill-list {
         flex-direction: column;
         align-items: center;
     }
+
     .art-of-expressions .skill-list::before,
     .financial-literacy .skill-list::before {
-        display: none; /* Hide dotted line on mobile */
+        display: none;
+        /* Hide dotted line on mobile */
     }
 }
