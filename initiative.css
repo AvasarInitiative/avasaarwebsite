@@ -85,9 +85,14 @@ body {
     color: #333;
 }
 
-.avasar-bridge {
-    size: 100%;
+.avasar-bridge img {
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
+
 
 @media (max-width: 768px) {
     .flowchart-row {

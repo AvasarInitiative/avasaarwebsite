@@ -20,3 +20,59 @@ body {
     display: block;
     width: 100%;
 }
+
+h2 {
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+.Hindi-Text {
+    font-family: Amita;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+em {
+    font-style: normal;
+    color: #1e3a8a;
+    word-spacing: 1.0rem;
+}
+
+.English-Text {
+    text-align: center;
+    font-size: 1.80rem;
+}
+
+.intent-container {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 600px;
+  position: relative;
+}
+
+.intent-title {
+  display: inline-block;
+  font-size: 3rem;
+  color: #2b3d8c;
+  font-weight: bold;
+  background-color: #fce6e0;
+  padding: 0 10px;
+  border-radius: 4px;
+  font-family: Amita;
+}
+
+.intent-title span {
+  font-weight: normal;
+  font-style: normal;
+  font-family: Amita;
+}
+
+.intent-description {
+  margin-top: 20px;
+  font-size: 2.0rem;
+  color: #333;
+  text-align: justify;
+  line-height: 1.6;
+  font-weight: 500;
+}
