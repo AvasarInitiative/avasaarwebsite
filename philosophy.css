@@ -87,3 +87,9 @@ em {
   line-height: 1.8;
   flex-grow: 1;
 }
+
+@media (max-width: 768px) {
+    .avasar-advantage {
+        font-size: 3rem;
+    }
+  }
