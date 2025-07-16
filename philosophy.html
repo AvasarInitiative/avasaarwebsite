@@ -27,6 +27,23 @@
             </ul>
         </nav>
     </header>
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      const isExpanded = navLinks.classList.toggle('show');
+      hamburger.setAttribute('aria-expanded', isExpanded);
+    });
+
+    const links = navLinks.getElementsByTagName('a');
+    for (let link of links) {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('show');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    }
+  </script>
 
 
     <main>
