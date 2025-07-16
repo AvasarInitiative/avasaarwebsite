@@ -6,13 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avasar Initiative</title>
     <link rel="stylesheet" href="initiative.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="styles.index.css">
     <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Podkova&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <div id="header-placeholder"></div>
+    <header class="site-header">
+  <div class="logo">
+    <img src="Logos/1-removebg-preview.png" alt="Avasar Logo" class="logo-img"/>
+  </div>
+  <nav class="main-nav">
+    <div class="hamburger" id="hamburger">☰</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="initiative.html">Initiative</a></li>
+      <li><a href="philosophy.html">Philosophy</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="challenges.html">Challenges</a></li>
+    </ul>
+  </nav>
+</header>
+
 
     <main>
         <section class="initiative-heading">
@@ -125,9 +140,14 @@
             </div>
         </section>
     </main>
-    <div id="footer-placeholder"></div>
-    <script src="loadHeader.js"></script>
-    <script src="loadFooter.js"></script>
+    <div class="site-footer">
+  <div class="footer-social">
+    <a href="mailto:[your-email-id]"><img src="Logos/email-icon.png" alt="Email" class="social-icon"></a>
+    <a href="https://www.linkedin.com/company/the-avasar-initiative/about/" target="_blank"><img src="Logos/linkedin-icon.png" alt="LinkedIn" class="social-icon"></a>
+    <a href="https://www.instagram.com/avasar_initiative/" target="_blank"><img src="Logos/instagram-icon.png" alt="Instagram" class="social-icon"></a>
+  </div>
+  <p class="footer-copyright">© 2025 Avasar Initiative. All rights reserved.</p>
+</div>
 </body>
 
 </html>

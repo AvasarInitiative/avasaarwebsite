@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenges</title>
     <link rel="stylesheet" href="challenges.css">
+    <link rel="stylesheet" href="styles.index.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Podkova&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -13,7 +14,21 @@
 </head>
 
 <body>
-    <div id="header-placeholder"></div>
+    <header class="site-header">
+    <div class="logo">
+        <img src="Logos/1-removebg-preview.png" alt="Avasar Logo" class="logo-img" />
+    </div>
+    <nav class="main-nav">
+        <div class="hamburger" id="hamburger">☰</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="initiative.html">Initiative</a></li>
+            <li><a href="philosophy.html">Philosophy</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="challenges.html">Challenges</a></li>
+        </ul>
+    </nav>
+    </header>
 
     <main>
         <div class="challenges-heading">
@@ -54,26 +69,34 @@
                         in his heart.</p>
                 </div>
                 <div class="journey-conti1">
-                <p>His day? Memorizing what he’ll forget by lunch. Outdated textbooks. A flood of social media
-                    “tips” from toppers and teen gurus. He’s not alone—<strong>millions of students are stuck in
-                        this cycle</strong>.</p>
-            </div>
-            <div class="journey-concluding">
-            <p>Chottu can solve equations but freezes in interviews. He can calculate compound interest but splurges
-                ₹500 on gaming. Budgeting? Saving? Investing? No one ever taught him that.</p>
-            <p>He recites the Pythagorean Theorem but can’t say what he wants to be—except maybe what Sharma ji’s
-                son became.</p>
-            <img src="Logos/chottu-sitting.png" alt="Chottu Sitting" class="chottu-img" />
-            <img src="Logos/House.png" alt="House" class="house-img" />
-            </div>
+                    <p>His day? Memorizing what he’ll forget by lunch. Outdated textbooks. A flood of social media
+                        “tips” from toppers and teen gurus. He’s not alone—<strong>millions of students are stuck in
+                            this cycle</strong>.</p>
+                </div>
+                <div class="journey-concluding">
+                    <p>Chottu can solve equations but freezes in interviews. He can calculate compound interest but
+                        splurges
+                        ₹500 on gaming. Budgeting? Saving? Investing? No one ever taught him that.</p>
+                    <p>He recites the Pythagorean Theorem but can’t say what he wants to be—except maybe what Sharma
+                        ji’s
+                        son became.</p>
+                    <img src="Logos/chottu-sitting.png" alt="Chottu Sitting" class="chottu-img" />
+                    <img src="Logos/House.png" alt="House" class="house-img" />
+                </div>
 
-            <p class="footer-note"><em>Not all weight is in the bag......</em></p>
+                <p class="footer-note"><em>Not all weight is in the bag......</em></p>
         </section>
     </main>
-    <div id="footer-placeholder"></div>
-    <script src="loadHeader.js"></script>
-    <script src="loadFooter.js"></script>
-
+    <div class="site-footer">
+        <div class="footer-social">
+            <a href="mailto:[your-email-id]"><img src="Logos/email-icon.png" alt="Email" class="social-icon"></a>
+            <a href="https://www.linkedin.com/company/the-avasar-initiative/about/" target="_blank"><img
+                    src="Logos/linkedin-icon.png" alt="LinkedIn" class="social-icon"></a>
+            <a href="https://www.instagram.com/avasar_initiative/" target="_blank"><img src="Logos/instagram-icon.png"
+                    alt="Instagram" class="social-icon"></a>
+        </div>
+        <p class="footer-copyright">© 2025 Avasar Initiative. All rights reserved.</p>
+    </div>
 </body>
 
 </html>
