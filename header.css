@@ -5,6 +5,7 @@
   padding: 1rem 2rem;
   background-color: #ffffff;
   border-bottom: 1px solid #eeeeee;
+  z-index: 1000;
 }
 
 /* Logo Section */
@@ -103,19 +104,23 @@
 
  .nav-links {
     flex-direction: column;
+    align-items: flex-start;
     position: absolute;
-    top: 70px;
+    top: 100%;
     left: 0;
     width: 100%;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-left: 2rem;
     padding: 0;
   }
 
   .nav-links.show {
     max-height: 300px;
-    padding: 1rem 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
