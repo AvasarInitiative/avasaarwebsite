@@ -259,6 +259,7 @@ h4 {
     max-height: 300px;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    overflow-y: auto;
   }
 }
 
