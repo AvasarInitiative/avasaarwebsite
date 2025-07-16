@@ -1,23 +1,13 @@
-// loadHeader.js
 fetch('header.html')
-  .then(response => response.text())
+  .then(res => res.text())
   .then(data => {
     document.getElementById('header-placeholder').innerHTML = data;
 
-    // Hamburger toggle for small screens
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
 
-    if (hamburger && navLinks) {
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
-      });
-    }
-
-    // Dynamically load header styles if needed
-    const headerCSS = document.createElement("link");
-    headerCSS.rel = "stylesheet";
-    headerCSS.href = "header.css";
-    document.head.appendChild(headerCSS);
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
   })
-  .catch(error => console.error('Error loading header:', error));
+  .catch(err => console.error('Header load error:', err));
