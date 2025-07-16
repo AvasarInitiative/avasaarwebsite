@@ -27,22 +27,37 @@
   </header>
 
   <script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
 
-    hamburger.addEventListener('click', () => {
-      const isExpanded = navLinks.classList.toggle('show');
-      hamburger.setAttribute('aria-expanded', isExpanded);
+  // Toggle the menu on hamburger click
+  hamburger.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent click from bubbling
+    const isExpanded = navLinks.classList.toggle('show');
+    hamburger.setAttribute('aria-expanded', isExpanded);
+  });
+
+  // Close menu on link click
+  const links = navLinks.getElementsByTagName('a');
+  for (let link of links) {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('show');
+      hamburger.setAttribute('aria-expanded', 'false');
     });
+  }
 
-    const links = navLinks.getElementsByTagName('a');
-    for (let link of links) {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('show');
-        hamburger.setAttribute('aria-expanded', 'false');
-      });
+  // Close the menu if user clicks anywhere outside it
+  document.addEventListener('click', function (event) {
+    const isClickInsideMenu = navLinks.contains(event.target);
+    const isClickOnHamburger = hamburger.contains(event.target);
+
+    if (!isClickInsideMenu && !isClickOnHamburger) {
+      navLinks.classList.remove('show');
+      hamburger.setAttribute('aria-expanded', 'false');
     }
-  </script>
+  });
+</script>
+
 
   <main>
     <!-- Hero Section -->
