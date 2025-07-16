@@ -84,7 +84,7 @@ body {
 }
 
 .school-img {
-  width: 500px;
+  max-width: 500px;
   height: auto;
 }
 
@@ -148,6 +148,6 @@ body {
 
 @media (max-width: 768px) {
     .avasar-challenges {
-        font-size: 3rem;
+        font-size: 4rem;
     }
-    
+  }
