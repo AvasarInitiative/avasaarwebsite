@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: podkova;
+}
+
+.about-us {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 5.5rem;
+}
+
+.about-image img {
+  width: 500px;
+  height: auto;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: #0f3c2e;
+}
+
+.subheading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.about-paragraphs p {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.about-paragraphs ul {
+  margin: 0 0 1rem 1.5rem;
+  padding: 0;
+  list-style-type: disc;
+  font-size: 1.25rem;
+}
+
+.about-paragraphs li {
+  margin-bottom: 0.5rem;
+}
+
+/* ----------------------------
+   ✅ Mobile Responsiveness
+----------------------------- */
+@media (max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.5rem;
+  }
+
+  .about-image img {
+    width: 80px;
+  }
+
+  .about-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .subheading {
+    font-size: 0.9rem;
+  }
+
+  .about-us {
+    padding: 1rem;
+  }
+
+  .about-paragraphs p,
+  .about-paragraphs li {
+    font-size: 0.95rem;
+  }
+}

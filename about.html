@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="styles.index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Podkova&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <img src="Logos/1-removebg-preview.png" alt="Avasar Logo" class="logo-img" />
+        </div>
+        <nav class="main-nav">
+            <div class="hamburger" id="hamburger">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="initiative.html">Initiative</a></li>
+                <li><a href="philosophy.html">Philosophy</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            const isExpanded = navLinks.classList.toggle('show');
+            hamburger.setAttribute('aria-expanded', isExpanded);
+        });
+
+        const links = navLinks.getElementsByTagName('a');
+        for (let link of links) {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('show');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        }
+    </script>
+    <section class="about-us">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="Logos/About-Us-logo.png" alt="About Us Logo" />
+            </div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <h4 class="subheading">Giving Purpose, Not Pressure.</h4>
+            </div>
+        </div>
+
+        <div class="about-paragraphs">
+            <p>At The Avasar Initiative, we believe that education should empower, not overwhelm. Our mission is to
+                bridge the painful gap between textbook theory and real-world readiness, especially for students like
+                Chottu—the 8th grader burdened not just by his heavy backpack, but by heavier expectations.</p>
+
+            <p>We’ve all seen it: students who can solve equations but freeze in interviews. Who can recite definitions
+                but can’t define their own goals. Education, as it stands, is producing test-takers—not decision-makers.
+            </p>
+
+            <p>That’s where we come in.</p>
+
+            <p>Avasar is a movement driven by intent, discipline, and the belief that destiny is not inherited, but
+                crafted. Through our curated learning journeys in oratory, emotional wellbeing, financial literacy,
+                negotiation, media awareness, and more, we instill life skills that go beyond exams. We’re cultivating
+                curious minds, courageous hearts, and confident communicators—students who don’t just prepare for the
+                world, but shape it.</p>
+
+            <p>We’re not another coaching class. We’re a real-world classroom—one where:</p>
+
+            <ul>
+                <li>Pressure transforms into purpose,</li>
+                <li>Memorization gives way to meaning,</li>
+                <li>And students learn not just what to think, but how to think.</li>
+            </ul>
+
+            <p>Whether it’s decoding geopolitics, managing money, negotiating ideas, or tackling misinformation, The
+                Avasar Initiative prepares students to lead with clarity and live with intent. Because when you teach a
+                child how to build their own path, they don’t chase success. They become it.</p>
+        </div>
+    </section>
+<div class="site-footer">
+        <div class="footer-social">
+            <a href="mailto:[your-email-id]"><img src="Logos/email-icon.png" alt="Email" class="social-icon"></a>
+            <a href="https://www.linkedin.com/company/the-avasar-initiative/about/" target="_blank"><img
+                    src="Logos/linkedin-icon.png" alt="LinkedIn" class="social-icon"></a>
+            <a href="https://www.instagram.com/avasar_initiative/" target="_blank"><img src="Logos/instagram-icon.png"
+                    alt="Instagram" class="social-icon"></a>
+        </div>
+        <p class="footer-copyright">© 2025 Avasar Initiative. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
