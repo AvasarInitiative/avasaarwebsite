@@ -101,7 +101,6 @@ h2 {
   padding: 2rem 1rem;
   margin: 0 auto;
   width: 100%;
-  max-width: 900px;
   /* control line length */
   text-align: center;
   box-sizing: border-box;
@@ -138,17 +137,23 @@ h2 {
 
 .swiper {
   position: relative;
-  padding-bottom: 40px;
-  /* Add some bottom padding for space */
+  padding-bottom: 2.5rem; /* Give room for pagination */
 }
 
+/* Adjust each slide */
+.swiper-slide.testimonial {
+  text-align: center;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+/* Position pagination dots outside the content */
 .swiper-pagination {
   position: absolute;
-  bottom: -20px;
-  /* Push below text area */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
+  bottom: 0.5rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .site-header {
