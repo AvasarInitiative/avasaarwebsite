@@ -99,11 +99,11 @@ h2 {
 .testimonial-section {
   background: #f9f9f9;
   padding: 2rem 1rem;
-  margin: 0 auto;
   width: 100%;
   /* control line length */
   text-align: center;
   box-sizing: border-box;
+  margin-bottom: 2rem;
 }
 
 .testimonial {
@@ -353,4 +353,5 @@ h2 {
 .testimonial blockquote {
   font-style: italic;
   font-size: 1.25rem;
+}
 }
