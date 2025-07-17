@@ -131,8 +131,17 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
+.swiper {
+  position: relative;
+  padding-bottom: 40px; /* Add some bottom padding for space */
+}
+
 .swiper-pagination {
-  margin-top: 100rem;
+  position: absolute;
+  bottom: -20px; /* Push below text area */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
 .site-header {
