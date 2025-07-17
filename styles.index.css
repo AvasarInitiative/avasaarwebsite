@@ -136,6 +136,17 @@ h2 {
   margin-top: 1rem;
 }
 
+.swiper {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -283,8 +294,6 @@ h2 {
     border-bottom: none;
   }
 }
-
-
 
 @media (max-width: 768px) {
   .button-card-container {
