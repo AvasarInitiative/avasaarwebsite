@@ -163,3 +163,19 @@ body {
   max-width: 200px;
   height: auto;
 }
+
+.journey-line p {
+  font-size: 0.75rem;
+}
+
+.chottu-intro h3 {
+  color: #1e3a8a;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.chottu-intro p {
+  color: #000;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
