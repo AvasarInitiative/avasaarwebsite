@@ -1,138 +1,139 @@
 body {
-    font-family: 'Podkova', serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
+  font-family: 'Podkova', serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
 }
 
 .hero {
-    text-align: center;
-    padding: 2rem 0;
+  text-align: center;
+  padding: 2rem 0;
 }
 
 .hero-logo {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
-    text-align: center;
-    font-size: 2rem;
-    margin: 2rem 0;
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
 }
 
 h1 em {
-    color: #1e3a8a;
+  color: #1e3a8a;
 }
 
 .button-section {
-    text-align: center;
-    padding: 5.5rem 0;
-    background-color: #ffff;
+  text-align: center;
+  padding: 5.5rem 0;
+  background-color: #ffff;
 }
 
 .button-card-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    font-size: 1.75rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.75rem;
 }
 
 .button-card {
-    background-color: #1e3a8a;
-    padding: 1.5rem;
-    border-radius: 10px;
-    max-width: 500px;
-    text-align: center;
+  background-color: #1e3a8a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
 }
 
 .card-button:hover {
-    color: #ffe746;
+  color: #ffe746;
 }
 
 .card-button {
-    text-decoration: none;
-    color: #ffff;
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    display: inline-block;
+  text-decoration: none;
+  color: #ffff;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  display: inline-block;
 }
 
 h2 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .intro-snippet {
-    text-align: center;
-    padding: 2rem;
-    background-color: #f9f9f9;
-    font-size: 1.75rem;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  font-size: 1.75rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 .cta-link {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .cta-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .side-by-side {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
 }
 
 .half-section {
-    width: 45%;
-    padding: 1rem;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    font-size: 1.75rem;
+  width: 45%;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  font-size: 1.75rem;
 }
 
-.impact-section {
-    padding: 2rem;
-    text-align: center;
-}
-
-.testimonial-row {
-    display: flex;
-    justify-content: center;
-    gap: 7.5rem;
+.testimonial-section {
+  padding: 1rem;
+  background: #fefefe;
+  max-width: 600px;
+  margin: auto;
 }
 
 .testimonial {
-    max-width: 700px;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
 }
 
 .testimonial img {
-    width: 100%;
-    border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
-.testimonial-text {
-    padding: 1rem 0;
-    font-size: 1.75rem;
+.testimonial blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-family: 'Georgia', serif;
 }
 
-blockquote {
-    font-style: italic;
-    margin: 0;
+.testimonial .author {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
 }
 
-cite {
-    font-size: 1.0rem;
-    color: #666;
-}
-h4 {
-    text-align: center;
+.swiper-pagination {
+  margin-top: 1rem;
 }
 
 .site-header {
@@ -286,16 +287,18 @@ h4 {
 
 
 @media (max-width: 768px) {
-    .button-card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .side-by-side {
-        flex-direction: column;
-        align-items: center;
-    }
-    .half-section {
-        width: 90%;
-        margin-bottom: 1rem;
-    }
+  .button-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-by-side {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .half-section {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
 }
