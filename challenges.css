@@ -199,3 +199,14 @@ body {
   opacity: 0.7;
   display: block;
 }
+
+.stat-card {
+  background-color: #112240;
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  flex: 1 1 250px;
+}
