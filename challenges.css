@@ -28,8 +28,7 @@ body {
   justify-content: center;
   gap: 3rem;
   padding: 3rem 1rem;
-  background-color: #0a1a2f; /* Dark background */
-}
+  background-color: #0a1a2f; 
 
 .stat-card {
   background-color: #112240;
@@ -126,7 +125,7 @@ body {
   font-style: italic;
   color: #444;
 }
-
+}
 
 @media (min-width: 900px) {
   .stat-card {
@@ -135,10 +134,6 @@ body {
   .chottu-section {
     flex-direction: column;
     text-align: center;
-  }
-
-  .school-icon i {
-    font-size: 3rem;
   }
 
   .chottu-text p {
