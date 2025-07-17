@@ -179,3 +179,23 @@ body {
   font-size: 0.75rem;
   margin-bottom: 0.5rem;
 }
+
+.stat-icon {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.stat-card p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  font-family: Podkova;
+}
+
+.stat-card small {
+  font-size: 0.25rem;
+  opacity: 0.7;
+  display: block;
+}
