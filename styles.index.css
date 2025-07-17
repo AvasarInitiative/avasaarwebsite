@@ -35,7 +35,7 @@ h1 em {
 .button-card-container {
     display: flex;
     justify-content: center;
-    gap: 7rem;
+    gap: 2rem;
     font-size: 1.75rem;
 }
 
@@ -219,13 +219,11 @@ h4 {
   height: 32px;
   margin: 0 0.5rem;
   border-radius: 50%;
-  /* Makes icons circular */
   transition: filter 0.3s;
 }
 
 .social-icon:hover {
   filter: grayscale(0%);
-  /* Shows color on hover */
 }
 
 @media (max-width: 768px) {

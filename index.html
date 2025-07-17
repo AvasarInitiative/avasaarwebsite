@@ -7,6 +7,14 @@
   <title>Avasar Home</title>
   <link rel="stylesheet" href="styles.index.css">
   <link href="https://fonts.googleapis.com/css2?family=Podkova&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -27,36 +35,36 @@
   </header>
 
   <script>
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
 
-  // Toggle the menu on hamburger click
-  hamburger.addEventListener('click', (event) => {
-    event.stopPropagation(); // Prevent click from bubbling
-    const isExpanded = navLinks.classList.toggle('show');
-    hamburger.setAttribute('aria-expanded', isExpanded);
-  });
-
-  // Close menu on link click
-  const links = navLinks.getElementsByTagName('a');
-  for (let link of links) {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('show');
-      hamburger.setAttribute('aria-expanded', 'false');
+    // Toggle the menu on hamburger click
+    hamburger.addEventListener('click', (event) => {
+      event.stopPropagation(); // Prevent click from bubbling
+      const isExpanded = navLinks.classList.toggle('show');
+      hamburger.setAttribute('aria-expanded', isExpanded);
     });
-  }
 
-  // Close the menu if user clicks anywhere outside it
-  document.addEventListener('click', function (event) {
-    const isClickInsideMenu = navLinks.contains(event.target);
-    const isClickOnHamburger = hamburger.contains(event.target);
-
-    if (!isClickInsideMenu && !isClickOnHamburger) {
-      navLinks.classList.remove('show');
-      hamburger.setAttribute('aria-expanded', 'false');
+    // Close menu on link click
+    const links = navLinks.getElementsByTagName('a');
+    for (let link of links) {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('show');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
     }
-  });
-</script>
+
+    // Close the menu if user clicks anywhere outside it
+    document.addEventListener('click', function (event) {
+      const isClickInsideMenu = navLinks.contains(event.target);
+      const isClickOnHamburger = hamburger.contains(event.target);
+
+      if (!isClickInsideMenu && !isClickOnHamburger) {
+        navLinks.classList.remove('show');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
 
 
   <main>
@@ -111,7 +119,7 @@
           We run an 8-month program inside schools that helps teens build life skills through
           stories, simulations, and real-world practice.
         </p>
-        <a href="solution.html" class="cta-link">Explore Our Full Initiative →</a>
+        <a href="initiative.html" class="cta-link">Explore Our Full Initiative →</a>
       </div>
     </section>
 
@@ -154,6 +162,17 @@
     </div>
     <p class="footer-copyright">© 2025 Avasar Initiative. All rights reserved.</p>
   </div>
+  <script>
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
 </body>
 
 </html>
