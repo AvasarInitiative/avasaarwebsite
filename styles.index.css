@@ -328,4 +328,29 @@ h2 {
   .testimonial-text {
     font-size: 1.1rem;
   }
+
+  h2 {
+  font-size: 1.5rem;
+}
+
+.intro-snippet {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  font-size: 1.0rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.half-section {
+  width: 45%;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  font-size: 1.0rem;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  font-size: 1.25rem;
 }
