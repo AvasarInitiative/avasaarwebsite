@@ -98,9 +98,13 @@ h2 {
 
 .testimonial-section {
   background: #f9f9f9;
-  max-width: 600px;
-  margin: auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+  /* control line length */
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .testimonial {
@@ -120,7 +124,7 @@ h2 {
 .testimonial blockquote {
   font-style: italic;
   font-size: 2.0rem;
-  line-height: 1.6;
+  line-height: 1.1;
   margin-bottom: 1rem;
   font-family: Podkova;
 }
@@ -134,12 +138,14 @@ h2 {
 
 .swiper {
   position: relative;
-  padding-bottom: 40px; /* Add some bottom padding for space */
+  padding-bottom: 40px;
+  /* Add some bottom padding for space */
 }
 
 .swiper-pagination {
   position: absolute;
-  bottom: -20px; /* Push below text area */
+  bottom: -20px;
+  /* Push below text area */
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -307,5 +313,14 @@ h2 {
   .half-section {
     width: 90%;
     margin-bottom: 1rem;
+  }
+
+  .testimonial-section {
+    padding: 1.5rem 1rem;
+    max-width: 100%;
+  }
+
+  .testimonial-text {
+    font-size: 1.1rem;
   }
 }
