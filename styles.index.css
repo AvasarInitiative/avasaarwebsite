@@ -118,14 +118,14 @@ h2 {
 
 .testimonial blockquote {
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 2.0rem;
   line-height: 1.6;
   margin-bottom: 1rem;
   font-family: Podkova;
 }
 
 .testimonial .author {
-  font-size: 0.9rem;
+  font-size: 1.0rem;
   font-weight: 500;
   color: #555;
   margin-bottom: 0.5rem;
