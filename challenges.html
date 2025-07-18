@@ -15,37 +15,37 @@
 
 <body>
     <header class="site-header">
-    <div class="logo">
-        <img src="Logos/1-removebg-preview.png" alt="Avasar Logo" class="logo-img" />
-    </div>
-    <nav class="main-nav">
-        <div class="hamburger" id="hamburger">☰</div>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="initiative.html">Initiative</a></li>
-            <li><a href="philosophy.html">Philosophy</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="challenges.html">Challenges</a></li>
-        </ul>
-    </nav>
+        <div class="logo">
+            <img src="Logos/1-removebg-preview.png" alt="Avasar Logo" class="logo-img" />
+        </div>
+        <nav class="main-nav">
+            <div class="hamburger" id="hamburger">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="initiative.html">Initiative</a></li>
+                <li><a href="philosophy.html">Philosophy</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+            </ul>
+        </nav>
     </header>
     <script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
 
-    hamburger.addEventListener('click', () => {
-      const isExpanded = navLinks.classList.toggle('show');
-      hamburger.setAttribute('aria-expanded', isExpanded);
-    });
+        hamburger.addEventListener('click', () => {
+            const isExpanded = navLinks.classList.toggle('show');
+            hamburger.setAttribute('aria-expanded', isExpanded);
+        });
 
-    const links = navLinks.getElementsByTagName('a');
-    for (let link of links) {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('show');
-        hamburger.setAttribute('aria-expanded', 'false');
-      });
-    }
-  </script>
+        const links = navLinks.getElementsByTagName('a');
+        for (let link of links) {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('show');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        }
+    </script>
 
     <main>
         <div class="challenges-heading">
@@ -73,36 +73,26 @@
                 <small>Source: Economic Times</small>
             </div>
         </section>
-        <section class="chottu-journey">
-            <div class="chottu-top">
-                <img src="Logos/School.png" alt="School" class="school-img" />
-                <img src="Logos/chottu-standing.png" alt="Chottu Walking" class="chottu-img" />
+        <div class="chottu-showcase">
+            <div class="school-img">
+                <img src="Logos/challenges.png" alt="School Illustration">
+                <div class="overlay-text">
+                    <h2 class="chottu-heading">Meet Chottu</h2>
+                    <div class="chottu-content">
+                        An 8th grader carrying a backpack heavier than his dreams, with anxiety in his mind and pressure
+                        in his heart.
+                        <p>His day? Memorizing what he’ll forget by lunch. Outdated textbooks. A flood of social media
+                            “tips” from toppers and teen gurus. He’s not alone—millions of students are stuck in this
+                            cycle.
+                        </p>
+                        <p>Chottu can solve equations but freezes in interviews. He can calculate compound interest but
+                            splurges ₹500 on gaming. Budgeting? Saving? Investing? No one ever taught him that.</p>
+                        <p>He recites the Pythagorean Theorem but can’t say what he wants to be—except maybe what Sharma
+                            ji’s son became.</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="journey-line">
-                <div class="chottu-intro">
-                    <h3>Meet Chottu</h3>
-                    <p>An 8th grader carrying a backpack heavier than his dreams, with anxiety in his mind and pressure
-                        in his heart.</p>
-                </div>
-                <div class="journey-conti1">
-                    <p>His day? Memorizing what he’ll forget by lunch. Outdated textbooks. A flood of social media
-                        “tips” from toppers and teen gurus. He’s not alone—<strong>millions of students are stuck in
-                            this cycle</strong>.</p>
-                </div>
-                <div class="journey-concluding">
-                    <p>Chottu can solve equations but freezes in interviews. He can calculate compound interest but
-                        splurges
-                        ₹500 on gaming. Budgeting? Saving? Investing? No one ever taught him that.</p>
-                    <p>He recites the Pythagorean Theorem but can’t say what he wants to be—except maybe what Sharma
-                        ji’s
-                        son became.</p>
-                    <img src="Logos/chottu-sitting.png" alt="Chottu Sitting" class="chottu-img" />
-                    <img src="Logos/House.png" alt="House" class="house-img" />
-                </div>
-
-                <p class="footer-note"><em>Not all weight is in the bag......</em></p>
-        </section>
+        </div>
     </main>
     <div class="site-footer">
         <div class="footer-social">

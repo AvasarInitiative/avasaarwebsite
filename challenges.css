@@ -49,7 +49,7 @@ body {
 }
 
 .stat-card p {
-  font-size: 1.75rem;
+  font-size: 2.0rem;
   font-weight: 600;
   line-height: 1.4;
   margin-bottom: 1rem;
@@ -67,68 +67,53 @@ body {
   font-weight: bold;
 }
 
-.chottu-journey {
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 2rem;
-  font-family: 'Podkova', serif;
-  line-height: 1.6;
-  color: #333;
-}
-
-.chottu-top {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.school-img {
-  max-width: 500px;
-  height: auto;
-}
-
-.chottu-intro h3 {
-  color: #1e3a8a;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.chottu-intro p {
-  color: #000;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.journey-line {
-  border-left: 2px dashed #999;
-  padding-left: 2rem;
+.chottu-showcase {
   position: relative;
-}
-
-.journey-line p {
-  font-size: 1.5rem;
-}
-
-.chottu-img {
-  max-width: 200px;
-  margin: 2rem 0;
-}
-
-.house-img {
-  max-width: 500px;
-  margin-top: 2rem;
-}
-
-.footer-note {
-  margin-top: 2rem;
-  text-align: left;
-  font-style: italic;
-  color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 480px;
+  width: 100%;
+  max-width: 950px;
+  margin: 2rem auto;
 }
 
 
-@media (min-width: 900px) {
+.h2 {
+  font-size: 2.5rem;
+}
+
+.school-img img {
+  max-width: 1200px;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  box-shadow: 0 3px 22px rgba(30, 58, 138, 0.07);
+  padding: 2.5rem 2rem 2rem 2rem;
+}
+
+.chottu-heading {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.chottu-content {
+  font-size: 1.6rem;
+  color: #232323;
+  line-height: 1.7;
+  margin-bottom: 1.1rem;
+}
+
+@media (min-width: 786px) {
   .stat-card {
     flex: 1 1 calc(33.333% - 2rem);
   }
@@ -141,72 +126,39 @@ body {
   .chottu-text p {
     max-width: 100%;
   }
-}
 
-@media (max-width: 768px) {
   .avasar-challenges {
     font-size: 4rem;
   }
-}
 
-.house-img {
-  max-width: 190px;
-  margin-top: 2rem;
-}
+  .stat-icon {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
 
-.chottu-img {
-  max-width: 90px;
-  margin: 2rem 0;
-}
+  .stat-card p {
+    font-size: 1.0rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    font-family: Podkova;
+  }
 
-.school-img {
-  max-width: 190px;
-  height: auto;
-}
+  .stat-card small {
+    font-size: 0.5rem;
+    opacity: 0.7;
+    display: block;
+  }
 
-.journey-line p {
-  font-size: 0.75rem;
-}
-
-.chottu-intro h3 {
-  color: #1e3a8a;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.chottu-intro p {
-  color: #000;
-  font-size: 0.75rem;
-  margin-bottom: 0.5rem;
-}
-
-.stat-icon {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  color: white;
-}
-
-.stat-card p {
-  font-size: 1.0rem;
-  font-weight: 600;
-  line-height: 1.4;
-  margin-bottom: 1rem;
-  font-family: Podkova;
-}
-
-.stat-card small {
-  font-size: 0.5rem;
-  opacity: 0.7;
-  display: block;
-}
-
-.stat-card {
-  background-color: #112240;
-  color: white;
-  padding: 2rem;
-  border-radius: 12px;
-  max-width: 200px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  flex: 1 1 250px;
+  .stat-card {
+    background-color: #112240;
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    flex: 1 1 250px;
+  }
 }
