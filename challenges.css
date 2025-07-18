@@ -113,7 +113,8 @@ body {
   margin-bottom: 1.1rem;
 }
 
-@media (min-width: 786px) {
+
+@media (max-width: 786px) {
   .stat-card {
     flex: 1 1 calc(33.333% - 2rem);
   }
@@ -161,4 +162,38 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     flex: 1 1 250px;
   }
+
+  .chottu-showcase {
+    flex-direction: column;
+    min-height: 300px;
+    max-width: 100vw;
+    padding: 0 2vw;
+    margin: 1rem auto;
+  }
+
+  .school-img img {
+    max-width: 98vw;
+  }
+
+  .overlay-text {
+    width: 96vw;
+    min-width: unset;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.2rem 0.6rem 1rem 0.6rem;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+  .chottu-heading {
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .chottu-content {
+    font-size: 1.01rem;
+    margin-bottom: 0.6rem;
+  }
+
 }
